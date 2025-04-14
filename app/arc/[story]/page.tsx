@@ -51,13 +51,13 @@ function StoryArc({ storyData }: StoryArcProps) {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     story: string
-  }
+  }>
 }
 
 export default async function StoryPage({ params }: PageProps) {
-  const { story } = params
+  const { story } = await params
 
   try {
     // Try to import the story data
@@ -70,7 +70,7 @@ export default async function StoryPage({ params }: PageProps) {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { story } = params
+  const { story } = await params
 
   try {
     const storyData = require(`@/data/story/${story}.json`)

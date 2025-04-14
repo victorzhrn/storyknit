@@ -4,6 +4,7 @@ import { TimelineContent } from "@/components/timeline-content"
 import { ArcPlot } from "@/components/arc-plot"
 import { Timeline } from "@/components/ui/timeline"
 import type { TimelineHeaderProps } from "@/types/timeline"
+import { Metadata } from "next"
 
 interface CharacterArcProps {
   characterData: {
@@ -76,28 +77,46 @@ function CharacterArc({ characterData }: CharacterArcProps) {
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     story: string
     character: string
-  }
+  }>
 }
 
 export default async function CharacterPage({ params }: PageProps) {
-  const { story, character } = params
+  const { story, character } = await params
 
   try {
     // Try to import the story data
     const storyData = require(`@/data/story/${story}.json`)
-    
-    // Check if the character exists in the story data
-    if (!storyData.character || !storyData.character[character]) {
-      notFound()
-    }
-
     return <CharacterArc characterData={storyData.character[character]} />
   } catch (error) {
     // If the story file doesn't exist, return 404
     notFound()
+  }
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { story, character } = await params
+
+  try {
+    const storyData = require(`@/data/story/${story}.json`)
+    const characterData = storyData.character[character]
+    
+    return {
+      title: characterData.metadata.title,
+      description: characterData.metadata.description,
+      openGraph: {
+        title: characterData.metadata.title,
+        description: characterData.metadata.description,
+        images: characterData.metadata.backgroundImage ? [characterData.metadata.backgroundImage] : [],
+      },
+    }
+  } catch (error) {
+    return {
+      title: 'Character Not Found',
+      description: 'The requested character could not be found.',
+    }
   }
 }
 
