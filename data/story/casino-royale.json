@@ -1,0 +1,307 @@
+{
+  "metadata": {
+    "title": "007 皇家赌场 (Casino Royale) 剧情",
+    "description": "这部电影讲述了詹姆斯·邦德获得00特工身份后的第一个任务，他必须在高额赌注的扑克游戏中击败恐怖分子融资人勒·希弗，同时与财政部代表薇斯帕·林德发展复杂的感情关系。",
+    "backgroundImage": "/images/casino-royale-shower.png"
+  },
+  "timeline": [
+    {
+      "title": "1. 序幕：邦德获得00身份",
+      "structure": "Exposition",
+      "intensity": 20,
+      "content": {
+        "mainText": "观众初见邦德的冷酷与果断，内心充满对晋升\"00\"特工的渴望。通过与叛徒德赖登的对话，感受到他尚未完全掌控情绪，略显青涩。杀死联系人时的暴力展现他愿意为任务牺牲道德底线。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "冷酷果断但略显青涩，愿意为任务牺牲道德底线，成长为更无情的特工。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Bond earns 00 status"
+        }
+      }
+    },
+    {
+      "title": "2. 马达加斯加：追捕炸弹制造者",
+      "structure": "Inciting Incident",
+      "intensity": 40,
+      "content": {
+        "mainText": "邦德展现惊人的体能和直觉，追逐中鲁莽暴露无遗，行动高调引发外交风波。观众看到他潜力巨大，但缺乏纪律，M的批评让他隐约意识到自身不足。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "展现惊人体能但行动鲁莽，成长曲线开始萌芽。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "虽未直接出现，但通过炸弹制造者的线索暗示其存在，观众开始了解其恐怖融资背景。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Madagascar chase"
+        }
+      }
+    },
+    {
+      "title": "3. MI6：M批评邦德",
+      "structure": "Progressive Complications",
+      "intensity": 30,
+      "content": {
+        "mainText": "面对M的责骂，邦德内心有些不服，但开始反思行事风格。观众了解到他不甘于平庸，渴望证明自己，但仍需学会隐藏锋芒。此刻的他更像努力证明自己的新手，而非完美特工。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "开始反思行事风格，渴望证明自己但仍需学会隐藏锋芒。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "作为资助恐怖分子的银行家被正式介绍，观众了解其角色在金融阴谋中的核心地位。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "M criticizes Bond"
+        }
+      }
+    },
+    {
+      "title": "4. 巴哈马：遇见索兰奇和迪米特里奥斯",
+      "structure": "Progressive Complications",
+      "intensity": 45,
+      "content": {
+        "mainText": "邦德用魅力接近索兰奇，获取信息，展现情报收集能力。索兰奇的死亡让他隐约感到任务的残酷代价，内心开始复杂化，观众看到他情感与任务间的平衡。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "展现情报收集能力，索兰奇的死让他感受任务残酷代价，内心开始复杂化。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "同伙迪米特里奥斯被杀，展现其冷酷和网络的广度，观众感受到其威胁。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Bahamas meeting"
+        }
+      }
+    },
+    {
+      "title": "5. 迈阿密：阻止机场爆炸",
+      "structure": "Progressive Complications",
+      "intensity": 60,
+      "content": {
+        "mainText": "在高强度任务中邦德展现冷静与机智，内心对阻止阴谋的决心更坚定。成功救下飞机后，观众看到他从鲁莽新手成长为能掌控大局的特工，但仍未完全摆脱个人英雄主义。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "展现冷静与机智，从鲁莽新手成长为能掌控大局的特工。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "计划失败，损失巨额资金，观众看到其财务困境，需通过扑克挽回。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Miami airport scene"
+        }
+      }
+    },
+    {
+      "title": "6. 任务分配：派往蒙特卡洛",
+      "structure": "Progressive Complications",
+      "intensity": 35,
+      "content": {
+        "mainText": "邦德接受新任务，内心从单纯行动派转向策略思考，展现团队合作意识。观众看到他试图在专业与个人魅力间平衡，成长为更成熟的特工。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "从单纯行动派转向策略思考，展现团队合作意识。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "作为财政部代表出现，内心充满对邦德的怀疑，认为他自负。她的机智与独立让观众感受到她不只是\"邦女郎\"，而是一个有深度的角色。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "财务困境凸显，观众了解其压力，需通过扑克赢回资金。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Mission assignment"
+        }
+      }
+    },
+    {
+      "title": "7. 蒙特卡洛：遇见薇斯帕",
+      "structure": "Progressive Complications",
+      "intensity": 50,
+      "content": {
+        "mainText": "邦德与薇斯帕初次交锋，展现傲慢与自信，机智幽默的对话揭示其魅力。被下毒后险死还生，依赖薇斯帕，内心信任感萌芽，成长为更成熟的特工。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "被下毒后险死还生，依赖薇斯帕，内心信任感萌芽。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "初期与邦德针锋相对，但通过支持他度过危机，内心逐渐向他敞开。观众感受到她被邦德吸引，但冷淡态度暗示内心有未解的秘密。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "在赌场准备扑克游戏，观众看到其眼部抽搐的\"破绽\"，暴露内心紧张。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Bond meets Vesper"
+        }
+      }
+    },
+    {
+      "title": "8. 扑克游戏：险胜后赢取胜利",
+      "structure": "Crisis",
+      "intensity": 75,
+      "content": {
+        "mainText": "邦德在牌桌上展现冷静与洞察，险些输光筹码后靠菲利克斯提供额外资金重返牌桌，赢取胜利。观众看到他从新手彻底蜕变为掌控全局的007，但对薇斯帕的感情开始影响判断。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "从新手彻底蜕变为掌控全局的007，但对薇斯帕的感情开始影响判断。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "支持邦德度过危机，内心信任增强，观众看到她对邦德的感情加深，但偶尔流露的犹豫暗示内心挣扎，可能与未揭示的背景有关。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "绝望且冷酷，试图通过毒杀和策略赢回资金，失败后内心崩溃。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Poker game"
+        }
+      }
+    },
+    {
+      "title": "9. 绑架：薇斯帕被绑，邦德被捕受酷刑",
+      "structure": "Crisis",
+      "intensity": 85,
+      "content": {
+        "mainText": "邦德为救薇斯帕不顾一切，内心首次展现对他人深切关怀。被折磨时宁死不屈，观众看到他内心的坚韧与忠诚，但对薇斯帕的感情让他暴露脆弱一面，成长为更人性化的特工。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "内心首次展现对他人深切关怀，被折磨时宁死不屈，成长为更人性化的特工。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "被绑架时恐惧无助，观众感受到她对邦德的依赖，但沉默暗示她可能知晓更多内幕，角色深度增加。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "通过酷刑展现虐待倾向，内心充满对生存的渴望，绝望中求生。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Bond torture scene"
+        }
+      }
+    },
+    {
+      "title": "10. 救援：白先生救邦德，杀勒·希弗",
+      "structure": "Climax",
+      "intensity": 90,
+      "content": {
+        "mainText": "邦德对白先生的感激和困惑，内心复杂化，观众看到他从任务导向转向对更大阴谋的疑惑。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "从任务导向转向对更大阴谋的疑惑，内心复杂化。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "被救后情感状态受影响，与邦德关系进一步深化，观众感受到她内心的脆弱。"
+          },
+          {
+            "character": "勒·希弗",
+            "text": "死亡标志角色弧线结束，但其失败暴露更大组织的存在。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Mr. White rescues Bond"
+        }
+      }
+    },
+    {
+      "title": "11. 威尼斯：恢复，坠入爱河",
+      "structure": "Climax",
+      "intensity": 95,
+      "content": {
+        "mainText": "邦德在医院向薇斯帕敞开心扉，内心从冷酷特工转为愿意为爱放弃一切的男人。观众看到他放下戒备，展现从未有过的脆弱，成长为更具情感深度的人。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "从冷酷特工转为愿意为爱放弃一切的男人，展现从未有过的脆弱。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "陪伴邦德恢复，内心对他的爱达到顶峰，但细微表情流露痛苦与内疚，观众开始怀疑她隐藏的秘密。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Venice romance"
+        }
+      }
+    },
+    {
+      "title": "12. 背叛：薇斯帕揭露为叛徒，死亡",
+      "structure": "Climax",
+      "intensity": 100,
+      "content": {
+        "mainText": "邦德发现薇斯帕背叛时的震惊转为愤怒，内心被深深伤害。她的死让他彻底封闭情感，观众看到他从信任与爱中跌落，成长为冷酷无情的007，内心留下永久伤痕。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "从信任与爱中跌落，成长为冷酷无情的007，内心留下永久伤痕。"
+          },
+          {
+            "character": "薇斯帕",
+            "text": "背叛动机揭露：为救被绑架的恋人被迫出卖邦德。观众看到她内心充满对邦德的爱与愧疚，选择死亡作为对背叛的赎罪，展现复杂而悲剧的内心世界。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Vesper's betrayal"
+        }
+      }
+    },
+    {
+      "title": "13. 复仇：追踪并射击白先生",
+      "structure": "Resolution",
+      "intensity": 25,
+      "content": {
+        "mainText": "邦德追踪白先生，内心已从情感崩溃中重塑为冷血特工。观众看到他彻底拥抱007身份，内心不再被感情束缚，成长为无情但高效的杀手，标志着完整弧线的结束。",
+        "characterDevelopment": [
+          {
+            "character": "邦德",
+            "text": "彻底拥抱007身份，内心不再被感情束缚，成长为无情但高效的杀手，标志着完整弧线的结束。"
+          }
+        ],
+        "image": {
+          "src": "/placeholder.svg?height=500&width=800",
+          "alt": "Bond's revenge"
+        }
+      }
+    }
+  ]
+} 
