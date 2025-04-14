@@ -1,5 +1,6 @@
 export interface CharacterDevelopment {
   character: string
+  name: string
   text: string
 }
 

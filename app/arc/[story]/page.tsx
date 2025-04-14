@@ -4,6 +4,7 @@ import { TimelineHeader } from "@/components/timeline-header"
 import { TimelineContent } from "@/components/timeline-content"
 import type { TimelineEntry } from "@/types/timeline"
 import { FloatingArcPlot } from "@/components/floating-arc-plot"
+import { Metadata } from "next"
 
 interface StoryArcProps {
   storyData: {
@@ -65,6 +66,28 @@ export default async function StoryPage({ params }: PageProps) {
   } catch (error) {
     // If the story file doesn't exist, return 404
     notFound()
+  }
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { story } = params
+
+  try {
+    const storyData = require(`@/data/story/${story}.json`)
+    return {
+      title: storyData.metadata.title,
+      description: storyData.metadata.description,
+      openGraph: {
+        title: storyData.metadata.title,
+        description: storyData.metadata.description,
+        images: storyData.metadata.backgroundImage ? [storyData.metadata.backgroundImage] : [],
+      },
+    }
+  } catch (error) {
+    return {
+      title: 'Story Not Found',
+      description: 'The requested story could not be found.',
+    }
   }
 }
 

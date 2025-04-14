@@ -1,86 +1,165 @@
 {
   "metadata": {
-    "title": "007 皇家赌场 (Casino Royale) 剧情",
-    "description": "这部电影讲述了詹姆斯·邦德获得00特工身份后的第一个任务，他必须在高额赌注的扑克游戏中击败恐怖分子融资人勒·希弗，同时与财政部代表薇斯帕·林德发展复杂的感情关系。",
+    "title": "007 Casino Royale",
+    "description": "This film tells the story of James Bond's first mission after obtaining his 00 agent status. He must defeat terrorist financier Le Chiffre in a high-stakes poker game while developing a complex relationship with Treasury representative Vesper Lynd.",
     "backgroundImage": "/images/casino-royale-shower.png"
+  },
+  "character": {
+    "james-bond": {
+      "metadata": {
+        "title": "James Bond",
+        "description": "007 agent, cold and decisive but slightly inexperienced, willing to sacrifice moral boundaries for the mission, growing into a more ruthless agent.",
+        "backgroundImage": "/images/james-bond.jpg"
+      },
+      "name": "James Bond",
+      "description": "007 agent, cold and decisive but slightly inexperienced, willing to sacrifice moral boundaries for the mission, growing into a more ruthless agent.",
+      "backstory": "Bond trained at MI6 to become a 007 agent. His father died on a mission, and his mother was killed by Le Chiffre. Bond has complex feelings about his mother, both hating and loving her.",
+      "plots":[
+        {
+          "title": "1. Prologue: Bond Earns 00 Status",
+          "structure": "Exposition",
+          "intensity": 20,
+          "content": {
+            "mainText": "Newly minted as a \"00\" agent, James Bond exudes cold determination and a fierce desire to prove himself. His decisive killing of a contact reveals a readiness to cross moral lines for the mission, though his emotional restraint still feels unpolished. This moment establishes him as a skilled yet raw operative, setting the stage for his evolution into a more ruthless spy."
+          }
+        },
+        {
+          "title": "2. Madagascar: Pursuing the Bomb Maker",
+          "structure": "Inciting Incident",
+          "intensity": 40,
+          "content": {
+            "mainText": "Bond demonstrates amazing physical abilities and intuition, but his recklessness is fully exposed during the chase, and his high-profile actions cause diplomatic incidents. The audience sees his great potential but lack of discipline, and M's criticism makes him vaguely aware of his shortcomings."
+          }
+        },
+        {
+          "title": "3. MI6: M Criticizes Bond",
+          "structure": "Progressive Complications",
+          "intensity": 30,
+          "content": {
+            "mainText": "Facing M's scolding, Bond is somewhat defiant but begins to reflect on his style of operation. The audience learns that he is unwilling to be mediocre, eager to prove himself, but still needs to learn to hide his edge. At this moment, he seems more like a novice trying to prove himself than a perfect agent."
+          }
+        },
+        {
+          "title": "4. Bahamas: Meeting Solange and Dimitrios",
+          "structure": "Progressive Complications",
+          "intensity": 45,
+          "content": {
+            "mainText": "Bond uses his charm to get close to Solange, gathering information and demonstrating his intelligence-gathering abilities. Solange's death makes him vaguely aware of the cruel cost of the mission, and his heart begins to become more complex. The audience sees his balance between emotion and mission."
+          }
+        }
+      ]
+    },
+    "le-chiffre": {
+      "metadata": {
+        "title": "Le Chiffre",
+        "description": "Terrorist financier, cold and ruthless, manipulating Bond through poker games.",
+        "backgroundImage": "/images/le-chiffre.jpg"
+      },
+      "name": "Le Chiffre",
+      "description": "Terrorist financier, cold and ruthless, manipulating Bond through poker games.",
+      "backstory": "Le Chiffre is a terrorist financier who manipulates Bond through poker games. His cold ruthlessness makes the audience feel his threat.",
+      "plots":[
+        
+      ]
+    },
+    "vesper-lynd": {
+      "metadata": {
+        "title": "Vesper Lynd",
+        "description": "Treasury representative, witty and independent, developing a complex relationship with Bond.",
+        "backgroundImage": "/images/vesper-lynd.jpg"
+      },
+      "name": "Vesper Lynd",
+      "description": "Treasury representative, witty and independent, developing a complex relationship with Bond.",
+      "backstory": "Vesper is a Treasury representative who develops a complex relationship with Bond. Her wit and independence make the audience feel that she is not just a \"Bond girl\" but a character with depth.",
+      "plots":[
+        
+      ]
+    }
   },
   "timeline": [
     {
-      "title": "1. 序幕：邦德获得00身份",
+      "title": "1. Prologue: Bond Earns 00 Status",
       "structure": "Exposition",
       "intensity": 20,
       "content": {
-        "mainText": "观众初见邦德的冷酷与果断，内心充满对晋升\"00\"特工的渴望。通过与叛徒德赖登的对话，感受到他尚未完全掌控情绪，略显青涩。杀死联系人时的暴力展现他愿意为任务牺牲道德底线。",
+        "mainText": "The audience first sees Bond's coldness and decisiveness, his heart filled with desire for promotion to \"00\" agent. Through his dialogue with traitor Dryden, they feel he hasn't fully mastered his emotions, appearing slightly inexperienced. The violence in killing the contact shows his willingness to sacrifice moral boundaries for the mission.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "冷酷果断但略显青涩，愿意为任务牺牲道德底线，成长为更无情的特工。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Bond trained at MI6 to become a 007 agent. His father died on a mission, and his mother was killed by Le Chiffre. Bond has complex feelings about his mother, both hating and loving her."
           }
         ],
         "image": {
-          "src": "/placeholder.svg?height=500&width=800",
+          "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcFWkjvmaqXVjcQdY1f6ymxGdPoyFWstuUdw&s",
           "alt": "Bond earns 00 status"
         }
       }
     },
     {
-      "title": "2. 马达加斯加：追捕炸弹制造者",
+      "title": "2. Madagascar: Pursuing the Bomb Maker",
       "structure": "Inciting Incident",
       "intensity": 40,
       "content": {
-        "mainText": "邦德展现惊人的体能和直觉，追逐中鲁莽暴露无遗，行动高调引发外交风波。观众看到他潜力巨大，但缺乏纪律，M的批评让他隐约意识到自身不足。",
+        "mainText": "Bond demonstrates amazing physical abilities and intuition, but his recklessness is fully exposed during the chase, and his high-profile actions cause diplomatic incidents. The audience sees his great potential but lack of discipline, and M's criticism makes him vaguely aware of his shortcomings.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "展现惊人体能但行动鲁莽，成长曲线开始萌芽。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Shows amazing physical abilities but acts recklessly, growth curve begins to emerge."
           },
           {
-            "character": "勒·希弗",
-            "text": "虽未直接出现，但通过炸弹制造者的线索暗示其存在，观众开始了解其恐怖融资背景。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Though not directly appearing, his existence is hinted through the bomb maker's clues, and the audience begins to understand his terrorist financing background."
           }
         ],
         "image": {
-          "src": "/placeholder.svg?height=500&width=800",
+          "src": "https://www.007.com/wp-content/uploads/2019/03/SA2_5156_Gallery.jpg",
           "alt": "Madagascar chase"
         }
       }
     },
     {
-      "title": "3. MI6：M批评邦德",
+      "title": "3. MI6: M Criticizes Bond",
       "structure": "Progressive Complications",
       "intensity": 30,
       "content": {
-        "mainText": "面对M的责骂，邦德内心有些不服，但开始反思行事风格。观众了解到他不甘于平庸，渴望证明自己，但仍需学会隐藏锋芒。此刻的他更像努力证明自己的新手，而非完美特工。",
+        "mainText": "Facing M's scolding, Bond is somewhat defiant but begins to reflect on his style of operation. The audience learns that he is unwilling to be mediocre, eager to prove himself, but still needs to learn to hide his edge. At this moment, he seems more like a novice trying to prove himself than a perfect agent.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "开始反思行事风格，渴望证明自己但仍需学会隐藏锋芒。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Begins to reflect on his style of operation, eager to prove himself but still needs to learn to hide his edge."
           },
           {
-            "character": "勒·希弗",
-            "text": "作为资助恐怖分子的银行家被正式介绍，观众了解其角色在金融阴谋中的核心地位。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Introduced as a banker funding terrorists, the audience understands his core role in the financial conspiracy."
           }
         ],
         "image": {
-          "src": "/placeholder.svg?height=500&width=800",
+          "src": "https://vascopatricio.com/wp-content/uploads/2022/10/Casino-Royale-00.23.10-M-dressing-down-Bond.png",
           "alt": "M criticizes Bond"
         }
       }
     },
     {
-      "title": "4. 巴哈马：遇见索兰奇和迪米特里奥斯",
+      "title": "4. Bahamas: Meeting Solange and Dimitrios",
       "structure": "Progressive Complications",
       "intensity": 45,
       "content": {
-        "mainText": "邦德用魅力接近索兰奇，获取信息，展现情报收集能力。索兰奇的死亡让他隐约感到任务的残酷代价，内心开始复杂化，观众看到他情感与任务间的平衡。",
+        "mainText": "Bond uses his charm to get close to Solange, gathering information and demonstrating his intelligence-gathering abilities. Solange's death makes him vaguely aware of the cruel cost of the mission, and his heart begins to become more complex. The audience sees his balance between emotion and mission.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "展现情报收集能力，索兰奇的死让他感受任务残酷代价，内心开始复杂化。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Demonstrates intelligence-gathering abilities, Solange's death makes him feel the cruel cost of the mission, his heart begins to become more complex."
           },
           {
-            "character": "勒·希弗",
-            "text": "同伙迪米特里奥斯被杀，展现其冷酷和网络的广度，观众感受到其威胁。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "His accomplice Dimitrios is killed, showing his coldness and the breadth of his network, the audience feels his threat."
           }
         ],
         "image": {
@@ -90,19 +169,21 @@
       }
     },
     {
-      "title": "5. 迈阿密：阻止机场爆炸",
+      "title": "5. Miami: Preventing the Airport Explosion",
       "structure": "Progressive Complications",
       "intensity": 60,
       "content": {
-        "mainText": "在高强度任务中邦德展现冷静与机智，内心对阻止阴谋的决心更坚定。成功救下飞机后，观众看到他从鲁莽新手成长为能掌控大局的特工，但仍未完全摆脱个人英雄主义。",
+        "mainText": "In the high-intensity mission, Bond demonstrates calmness and wit, his heart more determined to prevent the conspiracy. After successfully saving the plane, the audience sees him grow from a reckless novice to an agent who can control the situation, but he hasn't completely shaken off his personal heroism.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "展现冷静与机智，从鲁莽新手成长为能掌控大局的特工。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Demonstrates calmness and wit, grows from a reckless novice to an agent who can control the situation."
           },
           {
-            "character": "勒·希弗",
-            "text": "计划失败，损失巨额资金，观众看到其财务困境，需通过扑克挽回。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Plan fails, loses huge funds, the audience sees his financial difficulties, needs to recover through poker."
           }
         ],
         "image": {
@@ -112,23 +193,26 @@
       }
     },
     {
-      "title": "6. 任务分配：派往蒙特卡洛",
+      "title": "6. Mission Assignment: Sent to Monte Carlo",
       "structure": "Progressive Complications",
       "intensity": 35,
       "content": {
-        "mainText": "邦德接受新任务，内心从单纯行动派转向策略思考，展现团队合作意识。观众看到他试图在专业与个人魅力间平衡，成长为更成熟的特工。",
+        "mainText": "Bond accepts the new mission, his heart turning from pure action to strategic thinking, showing team cooperation awareness. The audience sees him trying to balance between professionalism and personal charm, growing into a more mature agent.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "从单纯行动派转向策略思考，展现团队合作意识。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Turns from pure action to strategic thinking, shows team cooperation awareness."
           },
           {
-            "character": "薇斯帕",
-            "text": "作为财政部代表出现，内心充满对邦德的怀疑，认为他自负。她的机智与独立让观众感受到她不只是\"邦女郎\"，而是一个有深度的角色。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Appears as Treasury representative, her heart full of suspicion towards Bond, thinking he is arrogant. Her wit and independence make the audience feel she is not just a \"Bond girl\" but a character with depth."
           },
           {
-            "character": "勒·希弗",
-            "text": "财务困境凸显，观众了解其压力，需通过扑克赢回资金。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Financial difficulties highlighted, the audience understands his pressure, needs to win back funds through poker."
           }
         ],
         "image": {
@@ -138,23 +222,26 @@
       }
     },
     {
-      "title": "7. 蒙特卡洛：遇见薇斯帕",
+      "title": "7. Monte Carlo: Meeting Vesper",
       "structure": "Progressive Complications",
       "intensity": 50,
       "content": {
-        "mainText": "邦德与薇斯帕初次交锋，展现傲慢与自信，机智幽默的对话揭示其魅力。被下毒后险死还生，依赖薇斯帕，内心信任感萌芽，成长为更成熟的特工。",
+        "mainText": "Bond and Vesper's first confrontation shows arrogance and confidence, witty dialogue reveals his charm. After being poisoned and narrowly escaping death, relying on Vesper, trust begins to sprout in his heart, growing into a more mature agent.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "被下毒后险死还生，依赖薇斯帕，内心信任感萌芽。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "After being poisoned and narrowly escaping death, relying on Vesper, trust begins to sprout in his heart."
           },
           {
-            "character": "薇斯帕",
-            "text": "初期与邦德针锋相对，但通过支持他度过危机，内心逐渐向他敞开。观众感受到她被邦德吸引，但冷淡态度暗示内心有未解的秘密。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Initially confronts Bond, but through supporting him through the crisis, her heart gradually opens to him. The audience feels she is attracted to Bond, but her cold attitude hints at undisclosed secrets in her heart."
           },
           {
-            "character": "勒·希弗",
-            "text": "在赌场准备扑克游戏，观众看到其眼部抽搐的\"破绽\"，暴露内心紧张。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Prepares for poker game at the casino, the audience sees his eye twitching \"tell\", exposing inner tension."
           }
         ],
         "image": {
@@ -164,23 +251,26 @@
       }
     },
     {
-      "title": "8. 扑克游戏：险胜后赢取胜利",
+      "title": "8. Poker Game: Narrow Victory After Near Defeat",
       "structure": "Crisis",
       "intensity": 75,
       "content": {
-        "mainText": "邦德在牌桌上展现冷静与洞察，险些输光筹码后靠菲利克斯提供额外资金重返牌桌，赢取胜利。观众看到他从新手彻底蜕变为掌控全局的007，但对薇斯帕的感情开始影响判断。",
+        "mainText": "Bond shows calmness and insight at the poker table, nearly losing all chips before Felix provides additional funds to return to the table and win. The audience sees him completely transform from a novice to a 007 in control, but his feelings for Vesper begin to affect his judgment.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "从新手彻底蜕变为掌控全局的007，但对薇斯帕的感情开始影响判断。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Completely transforms from a novice to a 007 in control, but his feelings for Vesper begin to affect his judgment."
           },
           {
-            "character": "薇斯帕",
-            "text": "支持邦德度过危机，内心信任增强，观众看到她对邦德的感情加深，但偶尔流露的犹豫暗示内心挣扎，可能与未揭示的背景有关。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Supports Bond through the crisis, inner trust increases, the audience sees her feelings for Bond deepen, but occasional hesitation hints at inner struggle, possibly related to unrevealed background."
           },
           {
-            "character": "勒·希弗",
-            "text": "绝望且冷酷，试图通过毒杀和策略赢回资金，失败后内心崩溃。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Desperate and cold, tries to win back funds through poisoning and strategy, collapses internally after failure."
           }
         ],
         "image": {
@@ -190,23 +280,26 @@
       }
     },
     {
-      "title": "9. 绑架：薇斯帕被绑，邦德被捕受酷刑",
+      "title": "9. Kidnapping: Vesper Kidnapped, Bond Captured and Tortured",
       "structure": "Crisis",
       "intensity": 85,
       "content": {
-        "mainText": "邦德为救薇斯帕不顾一切，内心首次展现对他人深切关怀。被折磨时宁死不屈，观众看到他内心的坚韧与忠诚，但对薇斯帕的感情让他暴露脆弱一面，成长为更人性化的特工。",
+        "mainText": "Bond risks everything to save Vesper, showing deep care for others for the first time. Unyielding under torture, the audience sees his inner resilience and loyalty, but his feelings for Vesper expose his vulnerable side, growing into a more human agent.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "内心首次展现对他人深切关怀，被折磨时宁死不屈，成长为更人性化的特工。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Shows deep care for others for the first time, unyielding under torture, grows into a more human agent."
           },
           {
-            "character": "薇斯帕",
-            "text": "被绑架时恐惧无助，观众感受到她对邦德的依赖，但沉默暗示她可能知晓更多内幕，角色深度增加。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Fearful and helpless when kidnapped, the audience feels her dependence on Bond, but her silence hints she may know more inside information, character depth increases."
           },
           {
-            "character": "勒·希弗",
-            "text": "通过酷刑展现虐待倾向，内心充满对生存的渴望，绝望中求生。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Shows abusive tendencies through torture, heart filled with desire for survival, desperate to survive."
           }
         ],
         "image": {
@@ -216,23 +309,26 @@
       }
     },
     {
-      "title": "10. 救援：白先生救邦德，杀勒·希弗",
+      "title": "10. Rescue: Mr. White Saves Bond, Kills Le Chiffre",
       "structure": "Climax",
       "intensity": 90,
       "content": {
-        "mainText": "邦德对白先生的感激和困惑，内心复杂化，观众看到他从任务导向转向对更大阴谋的疑惑。",
+        "mainText": "Bond's gratitude and confusion towards Mr. White, his heart becoming more complex, the audience sees him turning from mission-oriented to questioning a larger conspiracy.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "从任务导向转向对更大阴谋的疑惑，内心复杂化。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Turns from mission-oriented to questioning a larger conspiracy, heart becoming more complex."
           },
           {
-            "character": "薇斯帕",
-            "text": "被救后情感状态受影响，与邦德关系进一步深化，观众感受到她内心的脆弱。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Emotional state affected after being rescued, relationship with Bond further deepening, the audience feels her inner vulnerability."
           },
           {
-            "character": "勒·希弗",
-            "text": "死亡标志角色弧线结束，但其失败暴露更大组织的存在。"
+            "character": "le-chiffre",
+            "name": "Le Chiffre",
+            "text": "Death marks the end of character arc, but his failure exposes the existence of a larger organization."
           }
         ],
         "image": {
@@ -242,19 +338,21 @@
       }
     },
     {
-      "title": "11. 威尼斯：恢复，坠入爱河",
+      "title": "11. Venice: Recovery, Falling in Love",
       "structure": "Climax",
       "intensity": 95,
       "content": {
-        "mainText": "邦德在医院向薇斯帕敞开心扉，内心从冷酷特工转为愿意为爱放弃一切的男人。观众看到他放下戒备，展现从未有过的脆弱，成长为更具情感深度的人。",
+        "mainText": "Bond opens his heart to Vesper in the hospital, turning from a cold agent to a man willing to give up everything for love. The audience sees him let down his guard, showing unprecedented vulnerability, growing into a person with more emotional depth.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "从冷酷特工转为愿意为爱放弃一切的男人，展现从未有过的脆弱。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Turns from a cold agent to a man willing to give up everything for love, showing unprecedented vulnerability."
           },
           {
-            "character": "薇斯帕",
-            "text": "陪伴邦德恢复，内心对他的爱达到顶峰，但细微表情流露痛苦与内疚，观众开始怀疑她隐藏的秘密。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Accompanies Bond's recovery, her love for him reaching its peak, but subtle expressions reveal pain and guilt, the audience begins to suspect her hidden secrets."
           }
         ],
         "image": {
@@ -264,19 +362,21 @@
       }
     },
     {
-      "title": "12. 背叛：薇斯帕揭露为叛徒，死亡",
+      "title": "12. Betrayal: Vesper Revealed as Traitor, Death",
       "structure": "Climax",
       "intensity": 100,
       "content": {
-        "mainText": "邦德发现薇斯帕背叛时的震惊转为愤怒，内心被深深伤害。她的死让他彻底封闭情感，观众看到他从信任与爱中跌落，成长为冷酷无情的007，内心留下永久伤痕。",
+        "mainText": "Bond's shock turns to anger upon discovering Vesper's betrayal, his heart deeply hurt. Her death makes him completely close off emotionally, the audience sees him fall from trust and love, growing into a cold and ruthless 007, leaving permanent scars in his heart.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "从信任与爱中跌落，成长为冷酷无情的007，内心留下永久伤痕。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Falls from trust and love, grows into a cold and ruthless 007, leaving permanent scars in his heart."
           },
           {
-            "character": "薇斯帕",
-            "text": "背叛动机揭露：为救被绑架的恋人被迫出卖邦德。观众看到她内心充满对邦德的爱与愧疚，选择死亡作为对背叛的赎罪，展现复杂而悲剧的内心世界。"
+            "character": "vesper-lynd",
+            "name": "Vesper Lynd",
+            "text": "Betrayal motive revealed: forced to betray Bond to save her kidnapped lover. The audience sees her heart filled with love and guilt for Bond, choosing death as atonement for betrayal, showing a complex and tragic inner world."
           }
         ],
         "image": {
@@ -286,15 +386,16 @@
       }
     },
     {
-      "title": "13. 复仇：追踪并射击白先生",
+      "title": "13. Revenge: Tracking and Shooting Mr. White",
       "structure": "Resolution",
       "intensity": 25,
       "content": {
-        "mainText": "邦德追踪白先生，内心已从情感崩溃中重塑为冷血特工。观众看到他彻底拥抱007身份，内心不再被感情束缚，成长为无情但高效的杀手，标志着完整弧线的结束。",
+        "mainText": "Bond tracks Mr. White, his heart already reshaped from emotional collapse into a cold-blooded agent. The audience sees him completely embrace the 007 identity, his heart no longer bound by emotions, growing into a ruthless but efficient killer, marking the end of the complete arc.",
         "characterDevelopment": [
           {
-            "character": "邦德",
-            "text": "彻底拥抱007身份，内心不再被感情束缚，成长为无情但高效的杀手，标志着完整弧线的结束。"
+            "character": "james-bond",
+            "name": "James Bond",
+            "text": "Completely embraces the 007 identity, heart no longer bound by emotions, grows into a ruthless but efficient killer, marking the end of the complete arc."
           }
         ],
         "image": {
