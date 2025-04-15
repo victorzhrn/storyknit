@@ -41,9 +41,11 @@ interface CharacterData {
 
 interface CharacterArcProps {
   characterData: CharacterData
+  storyTitle: string
+  storySlug: string
 }
 
-function CharacterArc({ characterData }: CharacterArcProps) {
+function CharacterArc({ characterData, storyTitle, storySlug }: CharacterArcProps) {
   const { metadata, name, description, plots } = characterData
 
   // Only process plots if they exist and are not empty
@@ -81,12 +83,21 @@ function CharacterArc({ characterData }: CharacterArcProps) {
     )
   }
 
+  // Create the tag for the parent story
+  const headerTags = [
+    {
+      name: `Back to: ${storyTitle}`,
+      href: `/arc/${storySlug}`
+    }
+  ];
+
   return (
     <div className="w-full space-y-8">
       <TimelineHeader 
         title={name}
         description={description}
         backgroundImage={metadata.backgroundImage || ""}
+        tags={headerTags}
       />
       {formattedData.length > 0 && <Timeline data={formattedData} />}
     </div>
@@ -107,6 +118,7 @@ export default async function CharacterPage({ params }: PageProps) {
     // Try to import the story data
     const storyData = require(`@/data/story/${story}.json`)
     const characterData = storyData.character?.[character]
+    const storyTitle = storyData.metadata?.title || 'Story'
 
     // Handle case where character or character data is missing
     if (!characterData) {
@@ -114,7 +126,11 @@ export default async function CharacterPage({ params }: PageProps) {
       notFound()
     }
 
-    return <CharacterArc characterData={characterData} />
+    return <CharacterArc 
+      characterData={characterData} 
+      storyTitle={storyTitle}
+      storySlug={story}
+    />
   } catch (error) {
     console.error(`Error loading data for story "${story}", character "${character}":`, error)
     // If the story file doesn't exist or other error occurs, return 404

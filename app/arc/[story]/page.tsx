@@ -12,18 +12,30 @@ interface StoryMetadata {
   backgroundImage?: string
 }
 
-interface StoryArcProps {
-  storyData: {
-    metadata: StoryMetadata
-    timeline: (TimelineEntry & {
-      structure: string
-      intensity: number
-    })[]
+interface StoryData {
+  metadata: StoryMetadata
+  character: {
+    [key: string]: {
+      metadata: {
+        title: string
+        description: string
+        backgroundImage?: string
+      }
+    }
   }
+  timeline: (TimelineEntry & {
+    structure: string
+    intensity: number
+  })[]
 }
 
-function StoryArc({ storyData }: StoryArcProps) {
-  const { metadata, timeline } = storyData
+interface StoryArcProps {
+  storyData: StoryData
+  story: string
+}
+
+function StoryArc({ storyData, story }: StoryArcProps) {
+  const { metadata, timeline, character } = storyData
 
   // Transform timeline data for ArcPlot
   const storyPoints = timeline.map(entry => ({
@@ -31,6 +43,12 @@ function StoryArc({ storyData }: StoryArcProps) {
     structure: entry.structure,
     intensity: entry.intensity
   }))
+
+  // Generate tags from character data
+  const characterTags = Object.keys(character || {}).map((key) => ({
+    name: character[key].metadata.title || key,
+    href: `/arc/${story}/${key}`
+  }));
 
   // Transform the data to match the Timeline component's expected format
   const formattedData = [
@@ -59,6 +77,7 @@ function StoryArc({ storyData }: StoryArcProps) {
         title={metadata.title}
         description={metadata.description}
         backgroundImage={metadata.backgroundImage || ""}
+        tags={characterTags}
       />
       <Timeline data={formattedData} />
     </div>
@@ -76,8 +95,8 @@ export default async function StoryPage({ params }: PageProps) {
 
   try {
     // Try to import the story data
-    const storyData = require(`@/data/story/${story}.json`)
-    return <StoryArc storyData={storyData} />
+    const storyData: StoryData = require(`@/data/story/${story}.json`)
+    return <StoryArc storyData={storyData} story={story} />
   } catch (error) {
     // If the story file doesn't exist, return 404
     console.error(`Error loading story data for "${story}":`, error)
