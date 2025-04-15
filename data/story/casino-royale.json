@@ -20,7 +20,7 @@
           "structure": "Exposition",
           "intensity": 20,
           "content": {
-            "mainText": "Newly minted as a \"00\" agent, James Bond exudes cold determination and a fierce desire to prove himself. His decisive killing of a contact reveals a readiness to cross moral lines for the mission, though his emotional restraint still feels unpolished. This moment establishes him as a skilled yet raw operative, setting the stage for his evolution into a more ruthless spy."
+            "mainText": "Bond trained at MI6 to become a 007 agent. His father died on a mission, and his mother was killed by Le Chiffre. Bond has complex feelings about his mother, both hating and loving her."
           }
         },
         {
@@ -28,7 +28,7 @@
           "structure": "Inciting Incident",
           "intensity": 40,
           "content": {
-            "mainText": "Bond demonstrates amazing physical abilities and intuition, but his recklessness is fully exposed during the chase, and his high-profile actions cause diplomatic incidents. The audience sees his great potential but lack of discipline, and M's criticism makes him vaguely aware of his shortcomings."
+            "mainText": "Shows amazing physical abilities but acts recklessly, growth curve begins to emerge."
           }
         },
         {
@@ -36,7 +36,7 @@
           "structure": "Progressive Complications",
           "intensity": 30,
           "content": {
-            "mainText": "Facing M's scolding, Bond is somewhat defiant but begins to reflect on his style of operation. The audience learns that he is unwilling to be mediocre, eager to prove himself, but still needs to learn to hide his edge. At this moment, he seems more like a novice trying to prove himself than a perfect agent."
+            "mainText": "Begins to reflect on his style of operation, eager to prove himself but still needs to learn to hide his edge."
           }
         },
         {
@@ -44,7 +44,79 @@
           "structure": "Progressive Complications",
           "intensity": 45,
           "content": {
-            "mainText": "Bond uses his charm to get close to Solange, gathering information and demonstrating his intelligence-gathering abilities. Solange's death makes him vaguely aware of the cruel cost of the mission, and his heart begins to become more complex. The audience sees his balance between emotion and mission."
+            "mainText": "Demonstrates intelligence-gathering abilities, Solange's death makes him feel the cruel cost of the mission, his heart begins to become more complex."
+          }
+        },
+        {
+          "title": "5. Miami: Preventing the Airport Explosion",
+          "structure": "Progressive Complications",
+          "intensity": 60,
+          "content": {
+            "mainText": "Demonstrates calmness and wit, grows from a reckless novice to an agent who can control the situation."
+          }
+        },
+        {
+          "title": "6. Mission Assignment: Sent to Monte Carlo",
+          "structure": "Progressive Complications",
+          "intensity": 35,
+          "content": {
+            "mainText": "Turns from pure action to strategic thinking, shows team cooperation awareness."
+          }
+        },
+        {
+          "title": "7. Monte Carlo: Meeting Vesper",
+          "structure": "Progressive Complications",
+          "intensity": 50,
+          "content": {
+            "mainText": "After being poisoned and narrowly escaping death, relying on Vesper, trust begins to sprout in his heart."
+          }
+        },
+        {
+          "title": "8. Poker Game: Narrow Victory After Near Defeat",
+          "structure": "Crisis",
+          "intensity": 75,
+          "content": {
+            "mainText": "Completely transforms from a novice to a 007 in control, but his feelings for Vesper begin to affect his judgment."
+          }
+        },
+        {
+          "title": "9. Kidnapping: Vesper Kidnapped, Bond Captured and Tortured",
+          "structure": "Crisis",
+          "intensity": 85,
+          "content": {
+            "mainText": "Shows deep care for others for the first time, unyielding under torture, grows into a more human agent."
+          }
+        },
+        {
+          "title": "10. Rescue: Mr. White Saves Bond, Kills Le Chiffre",
+          "structure": "Climax",
+          "intensity": 90,
+          "content": {
+            "mainText": "Turns from mission-oriented to questioning a larger conspiracy, heart becoming more complex."
+          }
+        },
+        {
+          "title": "11. Venice: Recovery, Falling in Love",
+          "structure": "Climax",
+          "intensity": 95,
+          "content": {
+            "mainText": "Turns from a cold agent to a man willing to give up everything for love, showing unprecedented vulnerability."
+          }
+        },
+        {
+          "title": "12. Betrayal: Vesper Revealed as Traitor, Death",
+          "structure": "Climax",
+          "intensity": 100,
+          "content": {
+            "mainText": "Falls from trust and love, grows into a cold and ruthless 007, leaving permanent scars in his heart."
+          }
+        },
+        {
+          "title": "13. Revenge: Tracking and Shooting Mr. White",
+          "structure": "Resolution",
+          "intensity": 25,
+          "content": {
+            "mainText": "Completely embraces the 007 identity, heart no longer bound by emotions, grows into a ruthless but efficient killer, marking the end of the complete arc."
           }
         }
       ]
@@ -59,7 +131,78 @@
       "description": "Terrorist financier, cold and ruthless, manipulating Bond through poker games.",
       "backstory": "Le Chiffre is a terrorist financier who manipulates Bond through poker games. His cold ruthlessness makes the audience feel his threat.",
       "plots":[
-        
+        {
+          "title": "2. Madagascar: Pursuing the Bomb Maker",
+          "structure": "Inciting Incident",
+          "intensity": 40,
+          "content": {
+            "mainText": "Though not directly appearing, his existence is hinted through the bomb maker's clues, and the audience begins to understand his terrorist financing background."
+          }
+        },
+        {
+          "title": "3. MI6: M Criticizes Bond",
+          "structure": "Progressive Complications",
+          "intensity": 30,
+          "content": {
+            "mainText": "Introduced as a banker funding terrorists, the audience understands his core role in the financial conspiracy."
+          }
+        },
+        {
+          "title": "4. Bahamas: Meeting Solange and Dimitrios",
+          "structure": "Progressive Complications",
+          "intensity": 45,
+          "content": {
+            "mainText": "His accomplice Dimitrios is killed, showing his coldness and the breadth of his network, the audience feels his threat."
+          }
+        },
+        {
+          "title": "5. Miami: Preventing the Airport Explosion",
+          "structure": "Progressive Complications",
+          "intensity": 60,
+          "content": {
+            "mainText": "Plan fails, loses huge funds, the audience sees his financial difficulties, needs to recover through poker."
+          }
+        },
+        {
+          "title": "6. Mission Assignment: Sent to Monte Carlo",
+          "structure": "Progressive Complications",
+          "intensity": 35,
+          "content": {
+            "mainText": "Financial difficulties highlighted, the audience understands his pressure, needs to win back funds through poker."
+          }
+        },
+        {
+          "title": "7. Monte Carlo: Meeting Vesper",
+          "structure": "Progressive Complications",
+          "intensity": 50,
+          "content": {
+            "mainText": "Prepares for poker game at the casino, the audience sees his eye twitching \"tell\", exposing inner tension."
+          }
+        },
+        {
+          "title": "8. Poker Game: Narrow Victory After Near Defeat",
+          "structure": "Crisis",
+          "intensity": 75,
+          "content": {
+            "mainText": "Desperate and cold, tries to win back funds through poisoning and strategy, collapses internally after failure."
+          }
+        },
+        {
+          "title": "9. Kidnapping: Vesper Kidnapped, Bond Captured and Tortured",
+          "structure": "Crisis",
+          "intensity": 85,
+          "content": {
+            "mainText": "Shows abusive tendencies through torture, heart filled with desire for survival, desperate to survive."
+          }
+        },
+        {
+          "title": "10. Rescue: Mr. White Saves Bond, Kills Le Chiffre",
+          "structure": "Climax",
+          "intensity": 90,
+          "content": {
+            "mainText": "Death marks the end of character arc, but his failure exposes the existence of a larger organization."
+          }
+        }
       ]
     },
     "vesper-lynd": {
@@ -72,7 +215,62 @@
       "description": "Treasury representative, witty and independent, developing a complex relationship with Bond.",
       "backstory": "Vesper is a Treasury representative who develops a complex relationship with Bond. Her wit and independence make the audience feel that she is not just a \"Bond girl\" but a character with depth.",
       "plots":[
-        
+        {
+          "title": "6. Mission Assignment: Sent to Monte Carlo",
+          "structure": "Progressive Complications",
+          "intensity": 35,
+          "content": {
+            "mainText": "Appears as Treasury representative, her heart full of suspicion towards Bond, thinking he is arrogant. Her wit and independence make the audience feel she is not just a \"Bond girl\" but a character with depth."
+          }
+        },
+        {
+          "title": "7. Monte Carlo: Meeting Vesper",
+          "structure": "Progressive Complications",
+          "intensity": 50,
+          "content": {
+            "mainText": "Initially confronts Bond, but through supporting him through the crisis, her heart gradually opens to him. The audience feels she is attracted to Bond, but her cold attitude hints at undisclosed secrets in her heart."
+          }
+        },
+        {
+          "title": "8. Poker Game: Narrow Victory After Near Defeat",
+          "structure": "Crisis",
+          "intensity": 75,
+          "content": {
+            "mainText": "Supports Bond through the crisis, inner trust increases, the audience sees her feelings for Bond deepen, but occasional hesitation hints at inner struggle, possibly related to unrevealed background."
+          }
+        },
+        {
+          "title": "9. Kidnapping: Vesper Kidnapped, Bond Captured and Tortured",
+          "structure": "Crisis",
+          "intensity": 85,
+          "content": {
+            "mainText": "Fearful and helpless when kidnapped, the audience feels her dependence on Bond, but her silence hints she may know more inside information, character depth increases."
+          }
+        },
+        {
+          "title": "10. Rescue: Mr. White Saves Bond, Kills Le Chiffre",
+          "structure": "Climax",
+          "intensity": 90,
+          "content": {
+            "mainText": "Emotional state affected after being rescued, relationship with Bond further deepening, the audience feels her inner vulnerability."
+          }
+        },
+        {
+          "title": "11. Venice: Recovery, Falling in Love",
+          "structure": "Climax",
+          "intensity": 95,
+          "content": {
+            "mainText": "Accompanies Bond's recovery, her love for him reaching its peak, but subtle expressions reveal pain and guilt, the audience begins to suspect her hidden secrets."
+          }
+        },
+        {
+          "title": "12. Betrayal: Vesper Revealed as Traitor, Death",
+          "structure": "Climax",
+          "intensity": 100,
+          "content": {
+            "mainText": "Betrayal motive revealed: forced to betray Bond to save her kidnapped lover. The audience sees her heart filled with love and guilt for Bond, choosing death as atonement for betrayal, showing a complex and tragic inner world."
+          }
+        }
       ]
     }
   },
