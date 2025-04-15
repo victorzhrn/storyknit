@@ -16,6 +16,8 @@ export interface ArcPlotProps {
   title?: string;
   /** Array of story points */
   storyPoints: StoryPoint[];
+  /** Optional className for the container */
+  className?: string;
 }
 
 /**
@@ -26,6 +28,7 @@ export interface ArcPlotProps {
 export function ArcPlot({
   title = 'Story Arc',
   storyPoints,
+  className
 }: ArcPlotProps) {
   const chartRef = useRef<HTMLDivElement>(null);
   const chartInstance = useRef<echarts.ECharts | null>(null);
@@ -98,11 +101,14 @@ export function ArcPlot({
   }, []);
 
   useEffect(() => {
-    if (!chartInstance.current) return;
+    if (!chartInstance.current || !chartRef.current) return;
 
     const { data, markAreas } = processStoryData(storyPoints);
 
-    const option: EChartsOption = {
+    // Get initial chart width
+    const chartWidth = chartRef.current.offsetWidth;
+
+    const getChartOptions = (currentWidth: number): EChartsOption => ({
       tooltip: {
         trigger: 'axis',
         formatter: (params: any) => {
@@ -168,14 +174,18 @@ export function ArcPlot({
             show: true,
             formatter: function(params: any) {
               const index = params.value[0] - 1;
-              return storyPoints[index]?.title || '';
+              const fullTitle = storyPoints[index]?.title || '';
+              if (currentWidth < 500 && fullTitle.length > 10) {
+                return fullTitle.substring(0, 10) + '...';
+              }
+              return fullTitle;
             },
             position: 'bottom',
             distance: 5,
             rotate: 0,
             align: 'left',
             verticalAlign: 'middle',
-            fontSize: 14,
+            fontSize: 12,
             color: '#333',
             backgroundColor: 'rgba(255, 255, 255, 0.3)',
             padding: [2, 4, 2, 4],
@@ -192,9 +202,10 @@ export function ArcPlot({
           }
         }
       ],
-    };
+    });
 
-    chartInstance.current.setOption(option);
+    // Set initial options
+    chartInstance.current.setOption(getChartOptions(chartWidth));
 
     // Add click handler for plot points
     chartInstance.current.on('click', 'series.scatter', function(params: any) {
@@ -209,9 +220,14 @@ export function ArcPlot({
       }
     });
 
-    // Handle window resize
+    // Handle window resize - Update options on resize
     const handleResize = () => {
-      chartInstance.current?.resize();
+      if (chartInstance.current && chartRef.current) {
+        const newWidth = chartRef.current.offsetWidth;
+        // Re-apply options with potentially new width logic
+        chartInstance.current.setOption(getChartOptions(newWidth), false); // 'false' prevents option merging issues
+        chartInstance.current.resize(); // Resize the chart canvas
+      }
     };
 
     window.addEventListener('resize', handleResize);
@@ -219,9 +235,9 @@ export function ArcPlot({
   }, [title, storyPoints]);
 
   return (
-    <div 
-      ref={chartRef} 
-      className="w-full h-[32rem]" 
+    <div
+      ref={chartRef}
+      className={className ?? "w-full h-full"}
     />
   );
 }

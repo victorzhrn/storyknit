@@ -30,7 +30,7 @@ export function FloatingArcPlot({ title, storyPoints }: FloatingArcPlotProps) {
   return (
     <>
       {/* Original Plot */}
-      <div ref={ref} className="w-full">
+      <div ref={ref} className="w-full h-[32rem]">
         <ArcPlotWrapper title={title} storyPoints={storyPoints} />
       </div>
 
@@ -44,7 +44,7 @@ export function FloatingArcPlot({ title, storyPoints }: FloatingArcPlotProps) {
             style={{
               position: "fixed",
               bottom: "1rem",
-              left: "1rem",
+              right: "1rem",
               zIndex: 50,
               width: "25vw",
               height: "calc(25vw * 0.75)",
