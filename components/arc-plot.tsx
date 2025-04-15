@@ -125,7 +125,7 @@ export function ArcPlot({
         left: '0%',
         right: '0%',
         bottom: '0%',
-        top: '5%',
+        top: currentWidth < 500 ? '2%' : '5%',
       },
       xAxis: {
         type: 'value',
@@ -162,7 +162,10 @@ export function ArcPlot({
           data: data,
           markArea: {
             silent: true,
-            data: markAreas
+            data: markAreas,
+            label: {
+              show: currentWidth >= 500 
+            }
           },
         },
         {
@@ -209,14 +212,28 @@ export function ArcPlot({
 
     // Add click handler for plot points
     chartInstance.current.on('click', 'series.scatter', function(params: any) {
-      const index = params.data[0] - 1;
+      const index = params.value[0] - 1;
       const plotTitle = storyPoints[index]?.title;
+      
       if (plotTitle) {
-        // Find the corresponding timeline entry and scroll to it
-        const timelineEntry = document.querySelector(`[data-plot-title="${plotTitle}"]`);
+        // Escape the title for use in CSS selector. Use CSS.escape if available.
+        const escapedTitle = typeof CSS !== 'undefined' && CSS.escape 
+          ? CSS.escape(plotTitle) 
+          : plotTitle.replace(/["\\#.: C]/g, '\\$&'); // Basic fallback for key chars if CSS.escape is missing
+
+        // Find the corresponding timeline entry using the properly escaped title
+        const selector = `[data-plot-title="${escapedTitle}"]`;
+        console.log(`[ArcPlot Click] Searching for selector: ${selector}`); // Debug log
+        const timelineEntry = document.querySelector(selector);
+
         if (timelineEntry) {
+          console.log(`[ArcPlot Click] Found element:`, timelineEntry); // Debug log
           timelineEntry.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          console.warn(`[ArcPlot Click] Element not found for title: "${plotTitle}" (escaped: "${escapedTitle}")`); // Debug log
         }
+      } else {
+         console.warn('[ArcPlot Click] plotTitle is undefined for clicked point.'); // Debug log
       }
     });
 
