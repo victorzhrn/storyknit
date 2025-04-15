@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import { TimelineHeader } from "@/components/timeline-header"
 import { TimelineContent } from "@/components/timeline-content"
-import { ArcPlot } from "@/components/arc-plot"
+import { FloatingArcPlot } from "@/components/floating-arc-plot"
 import { Timeline } from "@/components/ui/timeline"
 import type { TimelineContent as TimelineContentType } from "@/types/timeline"
 import { Metadata } from "next"
@@ -64,12 +64,10 @@ function CharacterArc({ characterData }: CharacterArcProps) {
     formattedData.push({
       title: `Character Arc of ${name}`,
       content: (
-        <div className="bg-white dark:bg-neutral-950">
-          <ArcPlot
-            title={name}
-            storyPoints={storyPoints}
-          />
-        </div>
+        <FloatingArcPlot 
+          title={name}
+          storyPoints={storyPoints}
+        />
       ),
     })
 
@@ -88,7 +86,7 @@ function CharacterArc({ characterData }: CharacterArcProps) {
       <TimelineHeader 
         title={name}
         description={description}
-        backgroundImage={metadata.backgroundImage || undefined}
+        backgroundImage={metadata.backgroundImage || ""}
       />
       {formattedData.length > 0 && <Timeline data={formattedData} />}
     </div>

@@ -58,7 +58,7 @@ function StoryArc({ storyData }: StoryArcProps) {
       <TimelineHeader
         title={metadata.title}
         description={metadata.description}
-        backgroundImage={metadata.backgroundImage || undefined}
+        backgroundImage={metadata.backgroundImage || ""}
       />
       <Timeline data={formattedData} />
     </div>

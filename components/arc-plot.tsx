@@ -122,19 +122,19 @@ export function ArcPlot({
         },
       },
       grid: {
-        left: '0%',
-        right: '0%',
-        bottom: '0%',
+        left: '2%',
+        right: '2%',
+        bottom: '2%',
         top: currentWidth < 500 ? '2%' : '5%',
       },
       xAxis: {
+        show: false,
         type: 'value',
         min: 0.5,
         max: storyPoints.length + 0.5,
         interval: 1,
         axisLabel: {
           formatter: function(value: number) {
-            // Only show labels for integer values
             return Number.isInteger(value) ? value.toString() : '';
           }
         },
@@ -254,7 +254,7 @@ export function ArcPlot({
   return (
     <div
       ref={chartRef}
-      className={className ?? "w-full h-full"}
+      className={className ?? "w-full h-64 md:h-full"}
     />
   );
 }

@@ -30,7 +30,7 @@ export function FloatingArcPlot({ title, storyPoints }: FloatingArcPlotProps) {
   return (
     <>
       {/* Original Plot */}
-      <div ref={ref} className="w-full h-[32rem]">
+      <div ref={ref} className="w-full h-64 md:h-[32rem]">
         <ArcPlotWrapper title={title} storyPoints={storyPoints} />
       </div>
 
@@ -56,9 +56,11 @@ export function FloatingArcPlot({ title, storyPoints }: FloatingArcPlotProps) {
               backdropFilter: "blur(4px)",
               overflow: "hidden"
             }}
-            className="bg-gradient-to-br from-white/95 to-gray-50/95 dark:from-neutral-900/95 dark:to-neutral-950/95"
           >
-            <div data-plot-title={title} className="w-full h-full">
+            <div 
+              data-plot-title={title} 
+              className="w-full h-full bg-gradient-to-br from-white/95 to-gray-50/95 dark:from-neutral-900/95 dark:to-neutral-950/95"
+            >
               <ArcPlotWrapper 
                 title={title} 
                 storyPoints={storyPoints}
