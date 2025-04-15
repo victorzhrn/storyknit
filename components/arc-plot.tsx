@@ -10,7 +10,8 @@ interface StoryPoint {
   intensity: number;
 }
 
-interface ArcPlotProps {
+// Export the interface
+export interface ArcPlotProps {
   /** Main title of the chart */
   title?: string;
   /** Array of story points */
@@ -31,9 +32,27 @@ export function ArcPlot({
 
   // Process story points to create intervals for each structure type
   const processStoryData = (points: StoryPoint[]) => {
-    // Create data points starting from index 1
-    const data = points.map((point, index) => [index + 1, point.intensity]);
-    
+    const totalPoints = points.length; // Calculate total points
+    const halfPoints = Math.floor(totalPoints / 2); // Calculate half (integer)
+    const numPointsToAlignRight = Math.min(5, halfPoints); // Determine N
+
+    // Create data points as objects, starting from index 1
+    const data = points.map((point, index) => {
+      const item: {
+        value: number[];
+        label?: { align?: 'left' | 'right' }; // Define type for item
+      } = {
+        value: [index + 1, point.intensity],
+      };
+
+      // Add specific label alignment for the last N points
+      if (index >= totalPoints - numPointsToAlignRight) {
+        item.label = { align: 'right' };
+      }
+
+      return item;
+    });
+
     // Create intervals for each structure type with extended ranges
     const markAreas: Array<[any, any]> = [];
     let currentStructure = points[0].structure;
@@ -84,18 +103,10 @@ export function ArcPlot({
     const { data, markAreas } = processStoryData(storyPoints);
 
     const option: EChartsOption = {
-      title: {
-        text: title,
-        left: 'center',
-        textStyle: {
-          fontSize: 16,
-          fontWeight: 'bold'
-        }
-      },
       tooltip: {
         trigger: 'axis',
         formatter: (params: any) => {
-          const index = params[0].data[0];
+          const index = params[0].value[0];
           if (index === 0) return 'Start';
           const point = storyPoints[index - 1];
           return `${point.title}<br/>Structure: ${point.structure}<br/>Intensity: ${point.intensity}`;
@@ -105,10 +116,10 @@ export function ArcPlot({
         },
       },
       grid: {
-        left: '10%',
-        right: '10%',
-        bottom: '10%',
-        top: '15%',
+        left: '0%',
+        right: '0%',
+        bottom: '0%',
+        top: '5%',
       },
       xAxis: {
         type: 'value',
@@ -126,6 +137,7 @@ export function ArcPlot({
         }
       },
       yAxis: {
+        show: false,
         type: 'value',
         min: 0,
         max: 100,
@@ -155,7 +167,7 @@ export function ArcPlot({
           label: {
             show: true,
             formatter: function(params: any) {
-              const index = params.data[0] - 1;
+              const index = params.value[0] - 1;
               return storyPoints[index]?.title || '';
             },
             position: 'bottom',
