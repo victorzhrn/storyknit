@@ -30,7 +30,7 @@ export const TextReveal: FC<TextRevealProps> = ({ children, className }) => {
       >
         <span
           className={cn(
-            "flex flex-wrap p-5 text-2xl font-bold text-neutral-400",
+            "flex flex-wrap p-5 text-2xl font-bold text-neutral-200",
             "md:p-8 md:text-3xl lg:p-10 lg:text-4xl xl:text-5xl"
           )}
         >
